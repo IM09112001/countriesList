@@ -1,20 +1,19 @@
 {
-  "name": "countries_list",
+  "name": "hottour_interview",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.59",
-    "@types/react": "^18.2.31",
-    "@types/react-dom": "^18.2.14",
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4",
+    "@mui/icons-material": "5.11.0",
+    "@mui/material": "5.11.0",
+    "@mui/system": "5.11.0",
+    "path-to-regexp": "6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "react-window": "1.8.7",
+    "tss-react": "4.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,7 +25,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off",
+      "new-parens": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -39,5 +42,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.8.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/node": "^16.11.51",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@types/uuid": "8.3.4",
+    "concurrently": "^8.2.1",
+    "react-scripts": "5.0.1",
+    "typescript": "4.4.2"
   }
 }
